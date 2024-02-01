@@ -1,0 +1,401 @@
+body{
+    display: flex;
+    background-color: #F3F5FC;
+}
+
+.container-logo{
+    margin-top: 25px;
+    width: auto;
+    height: auto;
+}
+
+.input-box{
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 2;
+}
+
+.buttons-container{
+    justify-content:flex-start;
+    padding-left: 150px;
+
+}
+
+.encrypted{
+    width: 340px;
+    height: 67px;
+    margin-right: 35px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.encrypted:hover
+{
+    transform: scale(1.05);
+}
+
+.unencrypted{
+    width: 340px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.unencrypted:hover
+{
+    transform: scale(1.05);
+}
+
+.message{
+    display: flex;
+    margin-left: 150px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #495057;
+    justify-content: flex-start;
+
+}
+
+.exclamation{
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    justify-self: center;
+    margin-right: 5px;
+}
+
+.input-text{
+    position: relative;
+    padding-left: 150px;
+    padding-top: 150px;
+    resize: none;
+    border: none;
+    outline: none;
+    width: 577px;
+    height: 577px;
+    background-color: #F3F5FC;
+
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.input-text::placeholder{
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 150px;
+}
+.buttons-container{
+    display: flex;
+}
+
+.great-box{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.little-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 944px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#new-text{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: 30px auto;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+#new-button{
+    
+    margin: 30px auto;
+    width: 336px;
+    height: 67px;
+
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    color: #0A3871;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+#new-button:hover
+{
+    transform: scale(1.05);
+}
+
+.containerimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 336px;
+    height: 604px;
+}
+
+.little-image{
+    display: flex;
+    width: 336px;
+    height: 304px;
+}
+
+.text-below{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #343A40;
+    text-align: center;
+}
+
+.text-below2{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #343A40;
+    text-align: center;
+}
+
+@media screen and (max-width: 580px)
+{
+    body{
+        display: block;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-logo{
+        display: block;
+        width: 90px;
+        height: 48px;
+        margin-left: -30px;
+    }
+    
+    .input-text, .input-text::placeholder{
+        padding: 0;
+    }
+    .message{
+        margin-left: 0;
+    }
+    
+    .buttons-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        width: auto;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    
+    .encrypted{
+        
+        margin: 0 auto 10px;
+    }
+
+    .unencrypted{
+        background-color: #F3F5FC;
+    }
+    .input-box{
+
+        display: block;
+        width: auto;
+        height: 50%;
+
+        padding: 70px 0px 0px 10px;
+    }
+
+    .input-text{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .great-box, .little-box , .containerimg{
+        width: auto;
+        height: auto;
+        display: block;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .little-image{
+        visibility:hidden;
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
+
+    .containertextimg{
+        display: block;
+        width: auto;
+        padding: 10px 10px;
+    }
+
+    #new-button{
+        display: block;
+    }
+
+    #new-text{
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 1024px)
+
+{
+    body{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        
+    }
+
+    .container-logo{
+        display: block;
+        width: 90px;
+        height: 48px;
+        margin-left: -30px;
+    }
+    
+    .input-text::placeholder{
+        padding: 0;
+    }
+    .input-box{
+        display: block;
+        width: 100%;
+        height: 700px;
+    }
+    .message{
+        margin: 10px 0 10px 0px;
+        
+    }
+    
+    .buttons-container{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        width: auto;
+
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    
+    
+    .encrypted{
+        
+        margin: 0 auto 10px;
+    }
+
+    .unencrypted{
+        background-color: #F3F5FC;
+    }
+    #text{
+
+        display: block;
+        width: 100%;
+        height: 70%;
+
+        padding: 0;
+
+        margin-top: 70px;
+        margin-left: 15px;
+
+        
+    }
+
+    
+
+    .great-box, .little-box , .containerimg{
+        width: auto;
+        height: auto;
+        display: block;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .little-image{
+        visibility:hidden;
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
+
+    .containertextimg{
+        display: block;
+        width: auto;
+        padding: 10px 10px;
+    }
+
+    #new-button{
+        display: block;
+        width: 80%;
+        margin: 50px auto 50px;
+    }
+
+    #new-text{
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 30px 20px;
+    }
+}
+
